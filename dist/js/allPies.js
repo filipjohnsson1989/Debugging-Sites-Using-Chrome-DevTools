@@ -10,12 +10,12 @@ function loadAllPies() {
   .then(response => response.json())
   .then(data => {
 
-    // console.groupCollapsed('pie data');
-    // console.dir(data);
-    // console.table(data);
-    // console.groupEnd();
+    console.groupCollapsed('pie data');
+    console.dir(data);
+    console.table(data);
+    console.groupEnd();
 
-    // console.assert(data.length === 11, {pieCount: data.length, reason: 'Wrong number of pies'});
+    console.assert(data.length === 11, {pieCount: data.length, reason: 'Wrong number of pies'});
 
     let string_data = JSON.stringify(data);
 
@@ -35,7 +35,7 @@ function loadAllPies() {
 
     pieTable.innerHTML = pieMarkup;
 
-    // console.trace();
+     console.trace();
   });
 }
 
